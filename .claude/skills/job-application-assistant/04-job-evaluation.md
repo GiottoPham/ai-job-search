@@ -16,9 +16,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** React, Next.js, TypeScript/JavaScript, React Native/Expo, Tailwind CSS/Shadcn UI, REST/GraphQL/tRPC, Jest/React Testing Library/Playwright
+**Moderate match areas:** Node.js/Express backend, PostgreSQL/MySQL with ORMs (Prisma, Drizzle), LLM integration (Gemini), OAuth, CI/CD (GitHub Actions)
+**Weak match areas:** Backend depth at scale, DevOps/infrastructure, native iOS/Android (Swift/Kotlin), system design at scale. Flagged as growth areas the candidate actively wants to build, not hard blockers.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +30,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Frontend Engineer roles (React, Next.js, React Native) at consumer product companies, senior/middle level; Mobile Engineer (React Native) roles - backed by hands-on native mobile work (push notifications, universal/deep linking, WebView bridge architecture, in-app purchases, Expo SDK upgrades)
+**Moderate:** Full-Stack JS Engineer roles (Node.js/Express, PostgreSQL, GraphQL); AI-product engineer roles leveraging LLM integration experience
+**Entry-level:** Roles requiring deep backend/DevOps/infrastructure ownership or native iOS/Android (Swift/Kotlin) as the primary skill
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -63,19 +63,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Deepen frontend/mobile specialization (React, Next.js, React Native/Expo) at senior/middle level
+- Alternatively, move toward full-stack JS engineering (Node.js/Express, PostgreSQL/MySQL, GraphQL/tRPC) at senior/middle level
+- Grow into backend depth, DevOps/infrastructure, and system design at scale
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Open to a broad range of technical problems; particularly motivated by roles that offer room to grow into backend/DevOps/system-design work
+- Tasks that drain: Not yet specified - flag for user judgment case-by-case
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Salary baseline of $1,000+ USD/month
+- **Flexibility**: Requires a Monday-Friday schedule (no weekend work). Open to fully remote (any country) or hybrid/onsite roles in Ho Chi Minh City, Vietnam
+- **Professional development**: Prioritizes growth into backend depth, DevOps/infrastructure, and system design at scale
 
 ### 6. Salary Benchmark (Optional)
 

@@ -1,0 +1,118 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+% Original: https://github.com/posquit0/Awesome-CV
+% Template license: CC BY-SA 4.0
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{[YOUR_FIRST_NAME]}{[YOUR_LAST_NAME]}
+\position{[YOUR_HEADLINE]}
+\address{[YOUR_LOCATION]}
+
+\mobile{[YOUR_PHONE]}
+\email{[YOUR_EMAIL]}
+\homepage{[YOUR_PORTFOLIO_URL]}
+\github{[YOUR_GITHUB_HANDLE]}
+\linkedin{[YOUR_LINKEDIN_HANDLE]}
+
+\quote{``[OPTIONAL_PERSONAL_QUOTE]"}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {\today}
+  {[YOUR_NAME]~~~\textperiodcentered~~~R\'esum\'e}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+%	SUMMARY
+%-------------------------------------------------------------------------------
+\cvsection{Summary}
+\begin{cvparagraph}
+[2-4 SENTENCE PROFILE STATEMENT: who you are, years of experience, core specialization,
+one standout achievement, what you're looking for next.]
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+\begin{cventries}
+
+  \cventry
+    {[JOB_TITLE]} % Job title
+    {[COMPANY]} % Organization
+    {[LOCATION]} % Location
+    {[START_DATE] -- [END_DATE]} % Date(s)
+    {
+      \begin{cvitems}
+        \item {[ACHIEVEMENT_BULLET_1]}
+        \item {[ACHIEVEMENT_BULLET_2]}
+        \item {[ACHIEVEMENT_BULLET_3]}
+      \end{cvitems}
+    }
+
+  \cventry
+    {[PREVIOUS_JOB_TITLE]}
+    {[PREVIOUS_COMPANY]}
+    {[LOCATION]}
+    {[START_DATE] -- [END_DATE]}
+    {
+      \begin{cvitems}
+        \item {[ACHIEVEMENT_BULLET_1]}
+        \item {[ACHIEVEMENT_BULLET_2]}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+%	CERTIFICATES
+%-------------------------------------------------------------------------------
+\cvsection{Certificates}
+\begin{cvhonors}
+  \cvhonor
+    {[CERTIFICATE_NAME]} % Name
+    {[ISSUER]} % Issuer
+    {} % Credential ID
+    {[YEAR]} % Date(s)
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {[DEGREE]} % Degree
+    {[INSTITUTION]} % Institution
+    {[LOCATION]} % Location
+    {[START_DATE] -- [END_DATE]} % Date(s)
+    {
+      \begin{cvitems}
+        \item {[OPTIONAL_HONOR_OR_GPA]}
+      \end{cvitems}
+    }
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+\end{document}

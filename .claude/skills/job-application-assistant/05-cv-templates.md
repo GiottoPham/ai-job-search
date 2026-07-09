@@ -1,22 +1,37 @@
 # CV Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `jakes-resume`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies, **except page limit**, which this template overrides.
+>
+> - **Template skeleton:** `templates/cv/jakes-resume/template.tex` — use this as the structural reference instead of the stock moderncv template
+> - **Manifest:** `templates/cv/jakes-resume/TEMPLATE.md` — read this for style rules and known pitfalls before drafting
+> - **Compile with:** `pdflatex` (not `lualatex`, which the stock guidance below names)
+> - **Fonts:** Computer Modern / Latin Modern (default LaTeX article fonts) — no installation or bundled files needed
+> - **Page limit:** exactly **1 page** (this template is a strict single-page ATS-optimized format — overrides the framework's normal 2-page CV rule; cut content aggressively rather than trying to fit 2 pages of material)
+> - **Summary section required:** always include a 2-3 line `Summary` section right after the heading, before Technical Skills, tailored per role. Never cut it to save space — cut a bullet elsewhere first.
+> - **Section order:** Heading -> Summary -> Technical Skills -> Experience -> Projects -> Education -> Languages -> Certifications. Skills comes right after the Summary, before Experience — every tailored CV in this repo follows this order, which deviates from the upstream Jake Gutierrez template's default (Education/Experience/Projects/Skills). Follow the repo convention, not the raw template skeleton's original ordering.
+> - **Output file:** unchanged (`cv/nguyen_cv_<company>.tex`); no extra class/font files need to be copied, the template is self-contained standard LaTeX
+<!-- END ACTIVE-TEMPLATE -->
+
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
 ## Template: LaTeX moderncv (Banking Style)
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
 
-**Output file:** `cv/main_<company>.tex`
+**Output file:** `cv/nguyen_cv_<company>.tex`
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
-**Master reference:** `cv/main_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
+**Master reference:** `cv/nguyen_cv_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
 
 ### Compile command
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode main_<company>.tex
+cd cv && lualatex -interaction=nonstopmode nguyen_cv_<company>.tex
 ```
 
-Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on nguyen_cv_<company>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
 
 ## Document Structure
 
@@ -106,11 +121,11 @@ Write 5-7 lines that function as an "elevator pitch": a concise, compelling intr
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Frontend/Mobile Engineer roles (Senior/Middle):**
+> Frontend engineer with 4+ years shipping consumer-scale products end-to-end across React, Next.js, and React Native. At HouseNow · CarNow, owned feature delivery across seven apps and 15+ shared packages for a platform serving 400k+ users - from the subscription and payment system to admin tooling - while coordinating a 4-person frontend team. Looking to deepen frontend and mobile specialization on a product with real user scale.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Full-Stack JS Engineer roles (Senior/Middle):**
+> Frontend-rooted full-stack engineer (React, Next.js, Node.js/Express, PostgreSQL, GraphQL) with 4+ years shipping consumer products end-to-end. Beyond frontend ownership at HouseNow · CarNow, independently built and shipped two full-stack platforms - CareerReady (AI-driven interview prep with Google Gemini) and Giottolio - handling API design, database schema, and CI/CD deploys. Looking to grow further into backend depth, system design, and DevOps.
 
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.
@@ -150,7 +165,7 @@ If there is a gap in your employment history:
 
 After writing the CV and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean. Workflow:
 
-1. Run `lualatex -interaction=nonstopmode main_<company>.tex`
+1. Run `lualatex -interaction=nonstopmode nguyen_cv_<company>.tex`
 2. Check the output page count: must be exactly 2
 3. Read the PDF via the Read tool and visually inspect both pages
 4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of page 1 with its bullets on page 2

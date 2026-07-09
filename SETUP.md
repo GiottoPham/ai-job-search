@@ -117,6 +117,7 @@ cd ai-job-search
 Or manually: fork on GitHub, then clone your fork.
 
 ## 3. Install job search CLI dependencies
+
 Run these from the repository root.
 
 - PowerShell:
@@ -131,6 +132,7 @@ foreach ($tool in $tools) {
 ```
 
 - Bash / zsh / Git Bash:
+
 ```bash
 for tool in jobbank-search jobdanmark-search jobindex-search jobnet-search linkedin-search freehire-search; do
   cd .agents/skills/$tool/cli && bun install && cd ../../../..
@@ -165,16 +167,16 @@ All three paths produce the same result: fully populated profile files.
 
 ### What gets populated
 
-| File | Content |
-|------|---------|
-| `CLAUDE.md` | Your full candidate profile |
-| `01-candidate-profile.md` | Structured education, experience, skills |
-| `02-behavioral-profile.md` | Behavioral assessment |
-| `04-job-evaluation.md` | Personalized skill match areas and career goals |
-| `05-cv-templates.md` | Profile statement templates for your background |
-| `07-interview-prep.md` | STAR examples from your experience |
-| `cv/main_example.tex` | Your LaTeX CV with actual details |
-| `search-queries.md` | Job search queries for `/scrape` |
+| File                       | Content                                         |
+| -------------------------- | ----------------------------------------------- |
+| `CLAUDE.md`                | Your full candidate profile                     |
+| `01-candidate-profile.md`  | Structured education, experience, skills        |
+| `02-behavioral-profile.md` | Behavioral assessment                           |
+| `04-job-evaluation.md`     | Personalized skill match areas and career goals |
+| `05-cv-templates.md`       | Profile statement templates for your background |
+| `07-interview-prep.md`     | STAR examples from your experience              |
+| `cv/nguyen_cv_example.tex` | Your LaTeX CV with actual details               |
+| `search-queries.md`        | Job search queries for `/scrape`                |
 
 ### Re-running setup
 
@@ -216,6 +218,7 @@ Or paste the job description directly:
 ```
 
 Claude will:
+
 1. Evaluate the fit against your profile
 2. Ask if you want to proceed
 3. Draft a tailored CV and cover letter
@@ -227,8 +230,10 @@ Claude will:
 After `/apply` creates the LaTeX files:
 
 ```bash
-# Bash / zsh / Git Bash
-cd cv && lualatex main_<company>.tex && cd ..
+# Compile CV
+cd cv && lualatex nguyen_cv_<company>.tex && cd ..
+
+# Compile cover letter
 cd cover_letters && xelatex cover_<company>_<role>.tex && cd ..
 ```
 
@@ -243,20 +248,25 @@ These commands apply to the stock templates (moderncv CV, `cover.cls` cover lett
 ## Troubleshooting
 
 ### "salary_data.json not found"
+
 This is expected if you haven't set up salary benchmarking. The `/apply` workflow skips this step automatically.
 
 ### Job search CLI tools not working
+
 Make sure Bun is installed and you ran `bun install` in each CLI directory. The tools require network access to fetch job listings.
 
 ### LaTeX compilation errors
+
 - CV: uses `lualatex` (pdflatex often fails on modern MiKTeX with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly)
 - Cover letter: uses `xelatex` (for custom fonts in `OpenFonts/fonts/`)
 - Make sure your LaTeX distribution includes the `moderncv` package
 
 ### Fonts not found in cover letter
+
 The cover letter template expects fonts in `cover_letters/OpenFonts/fonts/`. Make sure this directory exists and contains the Lato and Raleway font files.
 
 ### Stale `.claude/settings.local.json` from an older clone
+
 Shared Claude Code permissions now live in `.claude/settings.json` (scoped to `bun run`, `python salary_lookup.py`, and `python3 salary_lookup.py`). Earlier versions of this repo committed a broader `.claude/settings.local.json` that pre-approved `Bash(curl:*)`, `Bash(python:*)` and `Bash(bun:*)`. If you cloned before that change, git leaves the old file behind in your working copy, and its permissions still apply on top of `settings.json`. Delete it (or trim it to your own personal overrides):
 
 ```bash

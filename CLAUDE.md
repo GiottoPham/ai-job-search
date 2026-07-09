@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Nguyen Pham Khang
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Nguyen Pham Khang, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,65 +13,70 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Nguyen Pham Khang
+- **Location:** Ho Chi Minh City, Vietnam (open to fully remote worldwide, or hybrid/onsite in Ho Chi Minh City)
+- **Languages:** English (785/990 TOEIC)
+- **Status:** Open to opportunities (immediately available)
+- **LinkedIn headline:** "Frontend Engineer - React, Next.js, React Native"
 
 ### Education
 <!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Bachelor of Engineering in Computer Science** (2018-2022) - Ho Chi Minh University of Technology
+  - GPA: 3.4/4.0
 
 ### Professional Experience
 <!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Frontend Engineer** (06/2023 - 04/2026) - **HouseNow · CarNow** (Ho Chi Minh City, Vietnam)
+  - Early frontend team member across a full product ecosystem (7 apps, 15+ shared packages) for a platform with 400k+ users
+  - Coordinated delivery across a 4-person frontend team while staying hands-on with implementation
+  - Owned and delivered the subscription system (in-app purchases for iOS/Android, QR-code payment for web)
+  - Built native mobile capabilities in the React Native app: push notifications (Expo Notifications + iOS notification service extension), universal links (iOS)/deep links (Android), the native-to-web WebView bridge, app icon updates, and Expo SDK upgrades across multiple major versions
+- **Junior Frontend Engineer** (09/2021 - 05/2023) - **Nobee** (Ho Chi Minh City, Vietnam)
+  - Developed cross-platform mobile app (React Native) and responsive web apps (React, Next.js, Tailwind CSS)
+- **Intern Mobile Engineer (Flutter)** (05/2021 - 07/2021) - **Clever Hub** (Ho Chi Minh City, Vietnam)
+  - Rewrote legacy mobile application from scratch using Flutter and Dart
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** React, Next.js, TypeScript, JavaScript, React Native, Expo
+- **Secondary:** Node.js/Express, REST, GraphQL, tRPC, TanStack (Router/Query/Form), Zustand, Zod
+- **Domain:** Consumer-scale web & mobile products, admin dashboards, design systems & accessibility (WCAG AA)
+- **Software:** Tailwind CSS, Shadcn UI, Framer Motion, Jest, React Testing Library, Playwright, MySQL (Prisma), PostgreSQL (Drizzle), Git, GitHub Actions
 
 ### Certifications
 <!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **IBM Full Stack Software Developer** - completed 2024
+- **Claude Code 101** - Certificate of completion
 
 ### Publications
 <!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+None yet.
 
 ### Awards
 <!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+None yet.
 
 ### Behavioral Profile
 <!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+No formal PI/DISC assessment - see `.claude/skills/job-application-assistant/02-behavioral-profile.md` for a profile synthesized from LinkedIn/CV patterns and self-assessment. Key traits: ownership-driven, deliberates carefully before committing, direct communicator, adaptable to either fast-moving or structured environments, dislikes micromanagement and meeting-heavy cultures.
 
 ### What Excites You
 <!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Open to a broad range of technical problems
+- Particularly motivated by roles with room to grow into backend depth, DevOps/infrastructure, and system design at scale
+
+### Target Roles
+- Frontend Engineer (React, Next.js, React Native) - primary target
+- Full-Stack JS Engineer (Node.js/Express, PostgreSQL, GraphQL)
+- Mobile Engineer (React Native) - backed by hands-on native mobile work: push notifications, universal/deep linking, WebView bridge architecture, in-app purchases, app icon management, Expo SDK upgrades
 
 ### Target Sectors
 <!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- No specific target companies - open to any sector
 
 ### Deal-breakers
 <!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Must be a Monday-Friday schedule (no weekend work)
+- Salary baseline: $1,000+ USD/month
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -85,7 +87,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/main_<company>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
+3. If good fit: create targeted CV (`cv/nguyen_cv_<company>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 

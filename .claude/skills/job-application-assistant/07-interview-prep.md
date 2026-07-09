@@ -12,26 +12,47 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+## STAR Candidates (Complete Manually)
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Subscription system ownership (HouseNow/CarNow)
+**Source:** CV - Frontend Engineer, HouseNow · CarNow
+**What happened:** Owned and delivered the subscription system - in-app purchases for iOS and Android, plus a QR-code payment flow for web.
+**Why it matters:** Answers questions about end-to-end ownership, handling payment/monetization-critical features, cross-platform (mobile + web) delivery.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Coordinating a 4-person frontend team while staying hands-on
+**Source:** CV - Frontend Engineer, HouseNow · CarNow
+**What happened:** Broke down design screens into scoped tasks and coordinated delivery across a 4-person frontend team, while remaining hands-on with implementation.
+**Why it matters:** Answers questions about leadership without formal authority, task breakdown/planning, balancing coordination with individual contribution.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Staging-only QA dev screen for instant Vercel preview switching
+**Source:** CV - Frontend Engineer, HouseNow · CarNow
+**What happened:** Built a staging-only dev screen in the React Native app letting QA switch the in-app WebView to any Vercel preview deployment instantly, without a native rebuild.
+**Why it matters:** Answers questions about initiative, developer tooling/productivity improvements, and identifying and solving a process bottleneck unprompted.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### CareerReady - async SSE analysis pipeline
+**Source:** CV - Independent Project, CareerReady
+**What happened:** Designed an async analysis pipeline with real-time progress streaming (SSE), replacing a blocking spinner with live per-step status updates.
+**Why it matters:** Answers questions about technical depth outside a guided work environment, system design decisions, and improving perceived performance/UX.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
