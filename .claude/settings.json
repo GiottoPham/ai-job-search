@@ -5,7 +5,17 @@
       "Bash(bun run:*)",
       "Bash(python salary_lookup.py:*)",
       "Bash(python3 salary_lookup.py:*)",
-      "Bash(pdftotext:*)"
+      "Bash(pdftotext:*)",
+      "Bash(bash .claude/skills/mock-interview/scripts/setup_voice.sh:*)",
+      "Bash(bash .claude/skills/mock-interview/scripts/speak.sh:*)",
+      "Bash(bash .claude/skills/mock-interview/scripts/transcribe.sh:*)",
+      "Bash(bash .claude/skills/mock-interview/scripts/start_recording.sh:*)",
+      "Bash(bash .claude/skills/mock-interview/scripts/wait_for_silence.sh:*)",
+      "Bash(bash /Users/zhiend/Developer/Personal/ai-job-search/.claude/skills/mock-interview/scripts/setup_voice.sh:*)",
+      "Bash(bash /Users/zhiend/Developer/Personal/ai-job-search/.claude/skills/mock-interview/scripts/speak.sh:*)",
+      "Bash(bash /Users/zhiend/Developer/Personal/ai-job-search/.claude/skills/mock-interview/scripts/transcribe.sh:*)",
+      "Bash(bash /Users/zhiend/Developer/Personal/ai-job-search/.claude/skills/mock-interview/scripts/start_recording.sh:*)",
+      "Bash(bash /Users/zhiend/Developer/Personal/ai-job-search/.claude/skills/mock-interview/scripts/wait_for_silence.sh:*)"
     ]
   }
 }

@@ -74,3 +74,10 @@ upskill/*.md
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Mock interview voice pipeline: local whisper.cpp binary marker + downloaded model
+.claude/skills/mock-interview/.whisper_bin
+.claude/skills/mock-interview/models/*.bin
+
+# Mock interview session progress (which questions were already asked per prep file)
+.claude/skills/mock-interview/progress/
