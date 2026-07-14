@@ -3,13 +3,13 @@
 <!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
 > **Active template override: `jakes-resume`**
 >
-> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies, **except page limit**, which this template overrides.
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins.
 >
 > - **Template skeleton:** `templates/cv/jakes-resume/template.tex` — use this as the structural reference instead of the stock moderncv template
 > - **Manifest:** `templates/cv/jakes-resume/TEMPLATE.md` — read this for style rules and known pitfalls before drafting
 > - **Compile with:** `pdflatex` (not `lualatex`, which the stock guidance below names)
 > - **Fonts:** Computer Modern / Latin Modern (default LaTeX article fonts) — no installation or bundled files needed
-> - **Page limit:** exactly **1 page** (this template is a strict single-page ATS-optimized format — overrides the framework's normal 2-page CV rule; cut content aggressively rather than trying to fit 2 pages of material)
+> - **Page limit:** exactly **2 pages** (originally a strict 1-page format; overridden per user preference on 2026-07-13 to make room for the Projects section — follow the stock guidance's normal 2-page cutting/fit rules below)
 > - **Summary section required:** always include a 2-3 line `Summary` section right after the heading, before Technical Skills, tailored per role. Never cut it to save space — cut a bullet elsewhere first.
 > - **Section order:** Heading -> Summary -> Technical Skills -> Experience -> Projects -> Education -> Languages -> Certifications. Skills comes right after the Summary, before Experience — every tailored CV in this repo follows this order, which deviates from the upstream Jake Gutierrez template's default (Education/Experience/Projects/Skills). Follow the repo convention, not the raw template skeleton's original ordering.
 > - **Output file:** unchanged (`cv/nguyen_cv_<company>.tex`); no extra class/font files need to be copied, the template is self-contained standard LaTeX

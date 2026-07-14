@@ -1,0 +1,19 @@
+Kính gửi Bộ phận Tuyển dụng Haiper-X,
+
+Tôi ứng tuyển vị trí Kỹ sư AI Full-Stack tại Haiper-X với hơn 4 năm kinh nghiệm xây dựng và vận hành các sản phẩm React/Next.js ở quy mô người dùng lớn (nền tảng HouseNow · CarNow, 400k+ người dùng), đồng thời tự tay phát triển backend Node.js/Express trong các dự án cá nhân.
+
+Thứ tôi tự hào nhất đã làm bằng AI trong 3 tháng gần đây là CareerReady (https://career-ready.site), một nền tảng luyện phỏng vấn tôi tự xây dựng từ đầu, dùng Google Gemini để phân tích CV và mô tả công việc, phát hiện khoảng trống kỹ năng, kèm module phỏng vấn thử với câu hỏi tạo tự động dựa trên CV và chấm điểm tự động. Tôi trực tiếp thiết kế kiến trúc hệ thống, schema PostgreSQL và REST API, trong khi Claude Code đảm nhiệm phần lớn việc triển khai code dưới sự định hướng của tôi, đúng với mô hình làm việc AI-native mà tin tuyển dụng của Haiper-X mô tả.
+
+AI workflow của tôi xoay quanh Claude Code kết hợp MCP server để giảm thao tác thủ công giữa các công cụ. Tại CarNow, tôi dùng Linear MCP để Claude Code đọc trực tiếp task spec, Figma MCP để chuyển thiết kế thành code, và Claude Code để khám phá codebase, sửa lỗi. Với dự án cá nhân như CareerReady, tôi duy trì file CLAUDE.md ghi rõ kiến trúc, quy ước code và ràng buộc dự án để định hướng Claude Code, còn tôi tập trung vào quyết định kiến trúc, thiết kế schema và review kết quả.
+
+Tin tuyển dụng nhấn mạnh việc triển khai code sản xuất nhanh, không qua nhiều tầng phê duyệt, cùng cơ hội ra mắt nhiều dịch vụ trong thời gian ngắn. Đây đúng là cách tôi đã làm việc khi tự xây dựng CareerReady và Giottolio từ đầu đến khi triển khai thực tế. Kinh nghiệm đó cũng ánh xạ vào các phần khác của vị trí:
+
+- Hợp tác trực tiếp với backend engineer: Tại HouseNow · CarNow, làm việc trực tiếp với đội backend để thiết kế schema tRPC theo nhu cầu tính năng, thay vì chỉ tiêu thụ một API có sẵn
+- Sở hữu tính năng web end-to-end: Phụ trách phần lớn tính năng admin dashboard và trang marketing (Next.js, SEO) cho nền tảng 400k+ người dùng
+
+Tôi chưa có kinh nghiệm trực tiếp với computer vision hay các pipeline machine learning chuyên sâu, nhưng nền tảng vững về thiết kế schema, API và quy trình làm việc AI-native giúp tôi tiếp cận nhanh với phần backend AI của vị trí này.
+
+Tôi mong sớm được trao đổi thêm với đội ngũ Haiper-X.
+
+Trân trọng,
+Nguyen Pham Khang
